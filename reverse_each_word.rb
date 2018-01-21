@@ -2,6 +2,6 @@ require 'pry'
 
 def reverse_each_word(sentence)
   words = sentence.split(" ")
-  words.map { |word| word.reverse }
-  binding.pry
+  words.map! { |word| word.reverse }
+  words.join(" ")
 end
